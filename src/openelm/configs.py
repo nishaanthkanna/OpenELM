@@ -12,6 +12,8 @@ class BaseConfig:
 
 @dataclass
 class ModelConfig(BaseConfig):
+    fp4: bool = False
+    fp8: bool = False
     fp16: bool = True
     cuda: bool = True
     gpus: int = 1
